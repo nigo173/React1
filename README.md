@@ -1,3 +1,5 @@
+# React
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,3 +68,42 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+# Github
+
+## gh-pages
+
+npm install gh-pages — save-dev
+
+## package.json
+
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build", // add
+    "deploy": "gh-pages -d build" // add
+  }
+
+“homepage”: http://nigo173.github.io/React1
+
+  "devDependencies": {
+    "gh-pages": "^3.1.0",
+    "homepage": "https://nigo173.github.io/React1" // change
+  }
+
+## push
+
+npm run deploy
+
+git init
+
+git add .
+
+git commit -m "first commit"
+
+git remote add origin git@github.com:nigo173/React1.git
+
+git push origin master
