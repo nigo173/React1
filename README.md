@@ -96,6 +96,8 @@ npm install gh-pages — save-dev
 
 ## push
 
+npm run build
+
 npm run deploy
 
 git init
