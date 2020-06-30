@@ -25,8 +25,8 @@ export default ({ startDate, title }) => {
 
     return (
         <div>
-            <table class="table">
-                <thead class="thead-dark">
+            <table className="table">
+                <thead className="thead-dark">
                     <tr>
                         <th scope="col">場次</th>
                         <th scope="col">時間</th>

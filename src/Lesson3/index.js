@@ -165,16 +165,16 @@ class Lesson3 extends Component {
         return (
             <Fragment>
                 <section id="lesson3">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <div class="col-lg-5 text-center">
-                                    <h2 class="textss">Lesson 3</h2>
-                                    <hr class="divider-title" />
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-8 mx-auto">
+                                <div className="col-lg-5 text-center">
+                                    <h2 className="textss">Lesson 3</h2>
+                                    <hr className="divider-title" />
                                 </div>
 
-                                <p class="china-font">心理測試</p>
-                                <p class="china-font">你的愛情是什麼滋味?</p>
+                                <p className="china-font">心理測試</p>
+                                <p className="china-font">你的愛情是什麼滋味?</p>
                                 <Controller data={this.state.data} page={this.state.page} onClick={this.showNext.bind(this)} text={this.state.btnText} myRef={this.myRef} count={this.state.count} onchange={this.getTotal.bind(this)} disableds={this.state.disableds} results={this.state.results} />
                             </div>
                         </div>

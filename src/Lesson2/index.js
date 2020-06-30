@@ -36,19 +36,19 @@ class Lesson2 extends Component {
         return (
             <Fragment>
                 <section id="lesson2">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <div class="col-lg-5 text-center">
-                                    <h2 class="textss">Lesson 2</h2>
-                                    <hr class="divider-title" />
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-8 mx-auto">
+                                <div className="col-lg-5 text-center">
+                                    <h2 className="textss">Lesson 2</h2>
+                                    <hr className="divider-title" />
                                 </div>
 
-                                <p class="china-font">社團課程時間表</p>
-                                <div class="input-group mb-3">
-                                    <input type="text" value={this.state.newDate} class="form-control" onChange={this.changeDate.bind(this)} placeholder="輸入日期格式 2/21" />
-                                    <div class="input-group-append">
-                                        <button class="btn btn-outline-secondary" type="button" onClick={this.showTable}>輸入</button>
+                                <p className="china-font">社團課程時間表</p>
+                                <div className="input-group mb-3">
+                                    <input type="text" value={this.state.newDate} className="form-control" onChange={this.changeDate.bind(this)} placeholder="輸入日期格式 2/21" />
+                                    <div className="input-group-append">
+                                        <button className="btn btn-outline-secondary" type="button" onClick={this.showTable}>輸入</button>
                                     </div>
                                 </div>
                                 <Controller startDate={this.state.startDate} title={this.state.title} />

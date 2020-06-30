@@ -49,15 +49,15 @@ class Lesson5 extends Component {
         return (
             <Fragment>
                 <section id="lesson3">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <div class="col-lg-5 text-center">
-                                    <h2 class="textss">Lesson 5</h2>
-                                    <hr class="divider-title" />
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-8 mx-auto">
+                                <div className="col-lg-5 text-center">
+                                    <h2 className="textss">Lesson 5</h2>
+                                    <hr className="divider-title" />
                                 </div>
 
-                                <p class="china-font">影片撥放器</p>
+                                <p className="china-font">影片撥放器</p>
                                 <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' />
 
                             </div>

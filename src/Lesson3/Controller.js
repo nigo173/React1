@@ -12,10 +12,10 @@ export default ({ data, page, onClick, myRef, text, onchange , disableds, result
     if(page < data.length){
         for (let i = 0; i < data[page].answers.length; i++) {
             list.push(
-                <li class="list-group-item">
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name={data[page].question} id={data[page].question} value={data[page].answers[i][1]}  onChange={onchange} />
-                        <label class="form-check-label" for={data[page].question}>
+                <li className="list-group-item">
+                    <div className="form-check">
+                        <input className="form-check-input" type="radio" name={data[page].question} id={data[page].question} value={data[page].answers[i][1]}  onChange={onchange} />
+                        <label className="form-check-label" for={data[page].question}>
                             {data[page].answers[i][0]}
                         </label>
                     </div>
@@ -32,11 +32,11 @@ export default ({ data, page, onClick, myRef, text, onchange , disableds, result
         <div>
             <h3>{title_}</h3>
 
-            <ul class="list-group">
+            <ul className="list-group">
                 {html_list}
             </ul>
             <br/>
-            <button class="btn btn-outline-secondary" type="button" onClick={onClick} ref={myRef}>{text}</button>
+            <button className="btn btn-outline-secondary" type="button" onClick={onClick} ref={myRef}>{text}</button>
             <br/>
             {results[0]}
             <br/>

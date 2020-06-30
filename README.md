@@ -70,11 +70,37 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
 
+
+# Jquery
+
+npm i jquery
+
+import $ from "jquery";
+
+# Bootstrap
+
+npm install --save bootstrap / npm install --save bootstrap@latest
+
+### index.js
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 # Github
 
 ## gh-pages
 
 npm install gh-pages — save-dev
+
+# .env file
+
+ #.env.local
+
+ or
+
+ set PUBLIC_URL=https://nigo173.github.io/React1/ 
+
+npm run build
 
 ## package.json
 

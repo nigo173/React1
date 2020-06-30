@@ -60,7 +60,7 @@ hr.divider-sub-title {
 
 canvas {
   border: 2px solid black;
-  background-image: url('/assets/canvas/grasses68.gif');
+  background-image: url('/canvas/grasses68.gif');
   width: 600px;
   height: 600px;
   background: darkcyan;

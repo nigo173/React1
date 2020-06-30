@@ -1,5 +1,4 @@
 import React, { Fragment, Component } from 'react';
-import Controller from './Controller';
 
 class Lesson4 extends Component {
 
@@ -14,7 +13,6 @@ class Lesson4 extends Component {
             imgEnemy: new Image(),
             currentImgX: 0,
             currentImgY: 0,
-            imgMain: new Image(),
             mapArray: [0, 1, 1, 0, 0, 0, 3, 1, 2],
             defArray: [0, 0, 0, 0]
         }
@@ -30,14 +28,6 @@ class Lesson4 extends Component {
         this.updateCanvas();
     }
 
-
-    componentWillReceiveProps({ keydown }) {
-        if (keydown.event) {
-            // inspect the keydown event and decide what to do
-            console.log(keydown.event.which);
-        }
-    }
-
     updateCanvas() {
     
         let ctx = this.canvas.current.getContext('2d');
@@ -46,9 +36,9 @@ class Lesson4 extends Component {
         let imgEnemy = this.state.imgEnemy;
         let currentImgX = this.state.currentImgX;
         let currentImgY = this.state.currentImgY;
-        imgMain.src = '../assets/img/canvas/spriteSheet.png';
-        imgMountain.src = '../assets/img/canvas/material.png';
-        imgEnemy.src = '../assets/img/canvas/Enemy.png';
+        imgMain.src = './assets/img/canvas/spriteSheet.png';
+        imgMountain.src = './assets/img/canvas/material.png';
+        imgEnemy.src = './assets/img/canvas/Enemy.png';
 
         
         let r_currentImgX = this.state.defArray[0];
@@ -147,25 +137,25 @@ class Lesson4 extends Component {
         return (
             <Fragment>
                 <section id="lesson4">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <div class="col-lg-5 text-center">
-                                    <h2 class="textss">Lesson 4</h2>
-                                    <hr class="divider-title" />
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-8 mx-auto">
+                                <div className="col-lg-5 text-center">
+                                    <h2 className="textss">Lesson 4</h2>
+                                    <hr className="divider-title" />
                                 </div>
-                                <p class="china-font">RPG</p>
-                                <p class="china-font">九宮格</p>
+                                <p className="china-font">RPG</p>
+                                <p className="china-font">九宮格</p>
 
                             </div>
 
-                            <div class="col-lg-8 mx-auto">
+                            <div className="col-lg-8 mx-auto">
 
-                            <canvas class="canvas" ref={this.canvas}></canvas>
+                            <canvas className="canvas" ref={this.canvas}></canvas>
                             </div>
                             <br />
 
-                            <div class="col-lg-8 mx-auto">
+                            <div className="col-lg-8 mx-auto">
                                 <button type="button" onClick={this.play}>上</button>
                                 <button type="button" onClick={this.play}>下</button>
                                 <button type="button" onClick={this.play}>左</button>
