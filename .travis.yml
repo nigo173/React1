@@ -1,6 +1,9 @@
 language: javascript
 node_js:
   - "10"
+install:
+    - npm install
 script:
     - npm run clean
+    - npm run build
     - npm run deploy
